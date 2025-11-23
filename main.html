@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid Layout</title>
 
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container mt-3">
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="col-md-4 col-sm-6 r1c1">
+            Row1 col1
+        </div>
+        <div class="col-md-8 col-sm-6 r1c2">
+            Row1 col2
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row justify-content-between">
+        <div class="col-md-4 offset-md-2 col-sm-6 r2c1">
+            Row2 col1
+        </div>
+        <div class="col-md-4 col-sm-6 r2c2">
+            Row2 col2
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row justify-content-center text-center">
+        <div class="col-md-4 col-sm-6 r3c1">
+            Row3 col1
+        </div>
+        <div class="col-md-4 col-sm-6 r3c2">
+            Row3 col2
+        </div>
+    </div>
+
+</div>
 
 </body>
-
 </html>

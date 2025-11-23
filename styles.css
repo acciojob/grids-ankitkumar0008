@@ -1,2 +1,49 @@
+.container {
+    max-width: 600px;
+    border: 5px solid rgb(4, 255, 4);
+    background-color: rgb(41, 0, 0);
+}
 
-/* Your CSS Code here. */
+/* Row styling */
+.row {
+    border: 5px solid rgb(255, 188, 188);
+    height: 200px;
+    margin-top: 10px;
+}
+
+/* Column styling */
+.col-md-4,
+.col-md-8,
+.col-sm-6 {
+    border: 2px dotted rgb(38, 38, 43);
+    height: 100%;
+}
+
+/* Individual column colors */
+.row:nth-child(1) .col-md-4 {
+    background-color: teal;
+}
+
+.row:nth-child(1) .col-md-8 {
+    background-color: thistle;
+}
+
+.row:nth-child(2) .col-md-4:nth-child(1),
+.row:nth-child(2) .col-sm-6:nth-child(1) {
+    background-color: tomato;
+}
+
+.row:nth-child(2) .col-md-4:nth-child(2),
+.row:nth-child(2) .col-sm-6:nth-child(2) {
+    background-color: turquoise;
+}
+
+.row:nth-child(3) .col-md-4:nth-child(1),
+.row:nth-child(3) .col-sm-6:nth-child(1) {
+    background-color: violet;
+}
+
+.row:nth-child(3) .col-md-4:nth-child(2),
+.row:nth-child(3) .col-sm-6:nth-child(2) {
+    background-color: yellowgreen;
+}
